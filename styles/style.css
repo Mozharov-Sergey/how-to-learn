@@ -8,12 +8,13 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
- 
 }
 
-div, ul, li, section, nav {
+/* ПОДСВЕТКА БЛОКОВ */
+
+/* div, ul, li, section, nav {
   border: 1px solid red;
-}
+} */
 
 .header {
   height: 100vh;
@@ -27,18 +28,12 @@ div, ul, li, section, nav {
   position: relative;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
 
 .logo {
   width:228px;
   height:32px; 
 }
+
 
 .logo__place_header {
   background-image: url(../images/logo_place_header.svg);
@@ -46,6 +41,7 @@ div, ul, li, section, nav {
   top: 30px;
   left: 64px;    
 }
+
 
 .header__title {
   width: 730px;
@@ -56,6 +52,7 @@ div, ul, li, section, nav {
   font-weight: bolder;
 }
 
+
 .header__subtitle {
   width: 388px;
   position: absolute;
@@ -65,9 +62,11 @@ div, ul, li, section, nav {
   font-size: 18px;
 }
 
+
 .header__link {
   color: #2f80ed;
 }
+
 
 .header__main-illustration {
   background-image: url(../images/header-image.png);
@@ -79,15 +78,16 @@ div, ul, li, section, nav {
   bottom:0px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента  */
+
  .header__square-pic {
   height: 568px;
   width: 568px;
-  background-color: #2f80ed; 
+  background-color: #2f80ed;
   align-self: flex-end;
   position:absolute;
   top: 64px;
  }
+
 
  /* ОПИСАНИЕ */
 
@@ -99,6 +99,7 @@ div, ul, li, section, nav {
   margin-top: 100px;
  }
 
+
  .two-columns__brief {
    width: 175px;
    color: #2f80ed;
@@ -106,6 +107,7 @@ div, ul, li, section, nav {
    line-height: 1.2;
    margin-top: 0px;
  }
+
 
  .two-columns__main-text {
    width: 80%;
@@ -116,12 +118,14 @@ div, ul, li, section, nav {
    margin-bottom: 0px;
 }
 
+
 .two-columns_paragraph {
   line-height: 34px;
   font-size: 24px;
   margin-top: 0px;
    margin-bottom: 30px;
 }
+
 
 .two-columns_span-accent {
   font-weight: bolder;
@@ -136,6 +140,7 @@ div, ul, li, section, nav {
   align-items: center;
 }
 
+
 .section-title {
   width: 60%;
   line-height: 1.15;
@@ -146,14 +151,17 @@ div, ul, li, section, nav {
   margin-bottom: 0px;
 }
 
+
 .section-subtitle {
   width: 60%;
   margin-top: 20px;
   margin-bottom: 0px;
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
   text-align: center;
 }
+
 
 .table {
   display: flex;
@@ -166,10 +174,13 @@ div, ul, li, section, nav {
   flex-wrap: wrap;
 }
 
+
 .table__cell {
   width: 250px;
   margin-top: 60px;
-};
+  margin-right: 0px;
+}
+
 
 .table__heading{
   line-height: 1.15;
@@ -177,13 +188,16 @@ div, ul, li, section, nav {
   font-weight: bolder;
 }
 
+
 .table__text {
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
 }
 
+
 /* ФЕЙНМАН */
+
 
 .feynman {
   margin-top: 100px;
@@ -200,22 +214,25 @@ div, ul, li, section, nav {
   background-color: #f2f2f2;
 }
 
+
 .feynman__title {
   width: 648px;
+  margin-bottom: 0px;
   line-height: 1.15;
   font-size: 120px;
   text-align: center;
   font-style: bolder;
-  margin-bottom: 0px;
 }
 
+
 .feynman__subtitle {
+  margin-top: 70px;
   line-height: 51px;
   font-weight: 36px;
   text-align: center;
-  margin-top: 70px;
   font-style: normal;
 }
+
 
 .feynman__link {
   color: #2f80ed;
@@ -226,7 +243,9 @@ div, ul, li, section, nav {
   font-size: 36px;
 }
 
+
 /* ПРИНЦИПЫ ОБУЧЕНИЯ КАУФМАНА */
+
 
 .kaufman {
   background-color:#1f1f1f;
@@ -244,8 +263,7 @@ div, ul, li, section, nav {
   color: #f2f2f2;
   margin-top: 90px;
   line-height: 1.15;
-  font-size: 60px;
-  
+  font-size: 60px; 
   z-index: 3;
 }
 
@@ -267,30 +285,32 @@ div, ul, li, section, nav {
 .table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
-  z-index: 3;
+  color: white;
 }
+
 
 .table__heading_theme_dark {
-  color: #f2f2f2;
   line-height: 1.15;
   font-size: 24px;
-  z-index: 3;
 }
 
+
 .table__text_theme_dark {
-  color: #f2f2f2;
   line-height: 1.2;
   font-size: 18px;
-  z-index: 3;
-  
 }
+
 
 .kaufman__triangle {
   position: absolute;
   background-size: 877px 877px;
   right: -210px;
-  z-index: 2;
+  z-index: -1;
 }
+
+
+/* ПОДВАЛ */
+
 
 .footer {
   display: flex;
@@ -300,8 +320,8 @@ div, ul, li, section, nav {
   min-width: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
-  z-index: 1;
 }
+
 
 .footer__columns {
   display: flex;
@@ -311,6 +331,7 @@ div, ul, li, section, nav {
   margin-top: 60px;
   margin-bottom: 40px;
 }
+
 
 .logo__place_footer {
   background-image: url(../images/logo_place_footer.svg);
@@ -325,6 +346,7 @@ div, ul, li, section, nav {
   height: inherit;
 }
 
+
 .footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
@@ -333,6 +355,7 @@ div, ul, li, section, nav {
   color: #f2f2f2;
 }
 
+
 .footer__column_content_info {
   display: flex;
   flex-direction: column;
@@ -340,13 +363,14 @@ div, ul, li, section, nav {
   align-items: flex-start;
 }
 
+
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  
 }
+
 
 .footer__column-heading {
   line-height: 30px;
@@ -358,9 +382,11 @@ div, ul, li, section, nav {
   margin-bottom: 20px;
 }
 
+
 .footer__column-links {
  margin-bottom: 16px;
 }
+
 
 .footer__column-link {
   line-height: 30px;
@@ -369,6 +395,7 @@ div, ul, li, section, nav {
   color: #f2f2f2;
   text-decoration: none;
 }
+
 
 .footer__social-icon {
   width: 16px;
