@@ -1,6 +1,5 @@
 .page {
   min-width: 1100px;
-  height: 3000px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
@@ -33,7 +32,7 @@ div, ul, li, section, nav {
   height:32px; 
 }
 
-.logo__place_header {
+.logo_place_header {
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
@@ -47,6 +46,8 @@ div, ul, li, section, nav {
   font-size: 102px;
   line-height: 96px;
   font-weight: bolder;
+  margin: 0;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -56,22 +57,22 @@ div, ul, li, section, nav {
   left: 64px;
   line-height: 25px;
   font-size: 18px;
+  z-index: 1;
 }
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
-  background-image: url(../images/header-image.png);
   height: 608px;
   width: 765px;
   background-size: cover;
   align-self: flex-end;
-  position: absolute;
+  position: absolute; 
   bottom: 0;
 }
-
  .header__square-pic {
   height: 568px;
   width: 568px;
@@ -87,7 +88,9 @@ div, ul, li, section, nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 100px;
+  margin: 100px auto 0;
+  width: 80%;
+  min-width: 784px;
  }
 
  .two-columns__brief {
@@ -95,7 +98,8 @@ div, ul, li, section, nav {
    color: #2f80ed;
    font-size: 18px;
    line-height: 1.2;
-   margin-top: 0;
+   font-weight: normal;
+   margin: 0;
  }
 
  .two-columns__main-text {
@@ -111,7 +115,11 @@ div, ul, li, section, nav {
   line-height: 34px;
   font-size: 24px;
   margin-top: 0px;
-   margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.two-columns_paragraph:last-of-type {
+  margin-bottom: 0;
 }
 
 .two-columns_span-accent {
@@ -168,12 +176,13 @@ div, ul, li, section, nav {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
+  margin: 0;
 }
 
 .table__text {
-  margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
+  margin: 20px 0 0;
 }
 
 
@@ -187,7 +196,7 @@ div, ul, li, section, nav {
   flex-direction: column;
   position: relative;
   align-items: center;
-  height: 890px;
+  min-height: 890px;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: 0% 100%;
@@ -197,19 +206,19 @@ div, ul, li, section, nav {
 
 .feynman__title {
   width: 648px;
-  margin-bottom: 0px;
+  margin: 100px auto 0;
   line-height: 1.15;
   font-size: 120px;
   text-align: center;
-  font-style: bolder;
+  font-weight: bolder;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
-  line-height: 51px;
-  font-weight: 36px;
+  margin: 70px auto 0;
   text-align: center;
-  font-style: normal;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
 }
 
 .feynman__link {
@@ -219,6 +228,7 @@ div, ul, li, section, nav {
   right: 48px;
   line-height: 51px;
   font-size: 36px;
+  text-decoration: 0px;
 }
 
 
@@ -226,8 +236,9 @@ div, ul, li, section, nav {
 
 
 .kaufman {
+  box-sizing: border-box;
+  padding-bottom: 90px;
   background-color:#1f1f1f;
-  height: 890px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +255,6 @@ div, ul, li, section, nav {
   z-index: 3;
 }
 
-
 .section-subtitle_theme_dark {
   color: #f2f2f2;
   line-height: 34px;
@@ -253,7 +263,7 @@ div, ul, li, section, nav {
   font-weight: normal;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   margin-bottom: 90px;
 }
 
@@ -274,8 +284,11 @@ div, ul, li, section, nav {
 }
 
 .kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   position: absolute;
-  background-size: 877px 877px;
   right: -210px;
   z-index: -1;
 }
@@ -285,13 +298,12 @@ div, ul, li, section, nav {
 
 
 .footer {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   background-color: #1f1f1f;
-  min-height: 400px;
-  min-width: 350px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  min-height: 350px;
+  padding: 60px 0 40px;
 }
 
 .footer__columns {
@@ -299,11 +311,11 @@ div, ul, li, section, nav {
   flex-direction: row;
   width: 90%;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
 }
 
