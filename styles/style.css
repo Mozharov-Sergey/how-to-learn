@@ -51,6 +51,7 @@ div, ul, li, section, nav {
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -111,18 +112,18 @@ div, ul, li, section, nav {
    margin-bottom: 0;
 }
 
-.two-columns_paragraph {
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.two-columns_paragraph:last-of-type {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
-.two-columns_span-accent {
+.two-columns__span-accent {
   font-weight: bolder;
 }
 
@@ -261,10 +262,6 @@ div, ul, li, section, nav {
   font-size: 24px;
   z-index: 3;
   font-weight: normal;
-}
-
-.table_theme_dark {
-  margin-bottom: 90px;
 }
 
 .table__cell_theme_dark {
