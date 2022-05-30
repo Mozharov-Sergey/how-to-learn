@@ -15,17 +15,6 @@ div, ul, li, section, nav {
   border: 1px solid red;
 } */
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
 
 .logo {
   width:228px;
@@ -39,49 +28,13 @@ div, ul, li, section, nav {
   left: 64px;    
 }
 
-.header__title {
-  width: 730px;
-  position: relative;
-  left: 64px;
-  font-size: 102px;
-  line-height: 96px;
-  font-weight: bolder;
-  margin: 0;
-  z-index: 1;
-}
 
-.header__subtitle {
-  margin: 0;
-  width: 388px;
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  line-height: 25px;
-  font-size: 18px;
-  z-index: 1;
-}
 
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
 
-.header__main-illustration {
-  height: 608px;
-  width: 765px;
-  background-size: cover;
-  align-self: flex-end;
-  position: absolute;
-  bottom: 0;
-}
- .header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  align-self: flex-end;
-  position: absolute;
-  top: 64px;
- }
+
+
+
+
 
  /* ОПИСАНИЕ */
 
