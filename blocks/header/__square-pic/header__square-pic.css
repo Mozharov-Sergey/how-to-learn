@@ -1,12 +1,12 @@
 .header__square-pic {
-    height: 568px;
-    width: 568px;
-    background-color: #2f80ed;
-    align-self: flex-end;
-    position: absolute;
-    top: 64px;
-    animation-name: rotation;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-   }
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  align-self: flex-end;
+  position: absolute;
+  top: 64px;
+  animation-name: rotation;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

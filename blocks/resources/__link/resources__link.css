@@ -1,0 +1,8 @@
+.resources__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+}
