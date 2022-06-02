@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="styles/style.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -19,11 +18,11 @@
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
         жизни?
-        <a class="header__link" href="#">Узнать→</a>
+        <a class="header__link" href="#">Узнать &rarr;</a>
       </p>
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
       <img class="header__main-illustration" src="./images/header-image.png"
-        alt="Фрагмент картины Федора Решетникова «Опять двойка»">
+        alt="Фрагмент картины Федора Решетникова &laquo;Опять двойка&raquo;">
     </header>
 
     <!-- ОПИСАНИЕ -->
@@ -56,29 +55,32 @@
         <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
         <ul class="cards">
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-attention.png" alt="Картинка">
+            <img class="cards__image" src="images/cards-attention.png"
+              alt="Книга в руках. Название:  &laquo;101 произведение, которые изменят ваше мышление. &raquo;">
             <h4 class="cards__title">Два вида внимания</h4>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
               мышление.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-recall.png" alt="Картинка">
+            <img class="cards__image" src="images/cards-recall.png" alt="Мраморная статуя задумавшегося юноши.">
             <h4 class="cards__title">Recall</h4>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-interliving.png" alt="Картинка">
+            <img class="cards__image" src="images/cards-interliving.png" alt="Черно белая фотография. Вид с лестницы сверху вниз на крупное общественное пространство. Центральная композиция. Потолок образован частыми поперечными конструкциями,
+            задающими темпоритм фотографии и создающими линейную перспективу.">
             <h4 class="cards__title">Интерливинг</h4>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-question.png" alt="Картинка">
+            <img class="cards__image" src="images/cards-question.png"
+              alt="Одинокий человек в большом светлом пространстве">
             <h4 class="cards__title">Вопросы</h4>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно
               волнует</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-competence.png" alt="Картинка">
+            <img class="cards__image" src="images/cards-competence.png" alt="Рука держит стопку книг на светлом фоне">
             <h4 class="cards__title">Иллюзия компетентности</h4>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы
               владеете новой темой.</p>
@@ -92,13 +94,11 @@
         <h2 class="section-title">Видео на TED</h2>
         <h3 class=" section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <ul class="video__iframes">
-          <li class="video__iframe">
-            <iframe width="515" height="316"
-              src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
           </li>
-          <li class="video__iframe">
-            <iframe width="515" height="316"
-              src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
           </li>
         </ul>
       </section>
@@ -176,16 +176,17 @@
 
       <section class="khan">
         <div class="khan__container">
-          <h2 class="khan__author">Салман Хан</h2>
-          <h3 class="khan__title">Весь мир — школа</h3>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по
+            всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
-            смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <h4 class="khan__quote-author">Джордж Лукас</h4>
-          <h5 class="khan__quote-author-subline">Кинорежиссер, продюсер</h5>
+            смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
+          <cite class="khan__quote-author">Джордж Лукас</cite>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="images/khan-book.jpg" alt="Изображение книги Салман Хана Весь мир - школа">
-            <a class="khan__buy-link" href="#">Купить книгу→</a>
+            <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
           </div>
         </div>
       </section>
@@ -193,7 +194,7 @@
       <!-- КАУФМАН -->
 
       <section class="kaufman">
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
         <ul class="table">
@@ -244,12 +245,16 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <nav class="resources__logo-zone">
-          <a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="логотип арзамас"></a>
-          <a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-n1.svg" alt="логотип H1"></a>
-          <a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-strelka.svg" alt="логотип стрелка"></a>
-          <a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-polka.svg" alt="логотип полка"></a>
-        </nav>
+        <ul class="resources__logo-zone">
+          <li><a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-arzamas.svg"
+                alt="логотип арзамас"></a></li>
+          <li><a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-n1.svg"
+                alt="логотип H1"></a></li>
+          <li><a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-strelka.svg"
+                alt="логотип стрелка"></a></li>
+          <li><a class="resources__link" href="#"><img class="resources__logo" src="images/logo/resources-polka.svg"
+                alt="логотип полка"></a></li>
+        </ul>
       </section>
     </main>
 
