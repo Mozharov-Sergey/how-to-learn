@@ -6,4 +6,9 @@
   line-height: 51px;
   font-size: 36px;
   text-decoration: 0px;
+  transition: color 0.2s ease-out;
+}
+
+.feynman__link:hover {
+  color: red;
 }

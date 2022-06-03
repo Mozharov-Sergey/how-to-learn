@@ -4,4 +4,11 @@
   font-weight: normal;
   color: white;
   text-decoration: none;
+  transition: background-color 0.2s ease-out;
+  border-radius: 10px;
+}
+
+.footer__column-link:hover {
+  background-color: rgb(66, 66, 66, 1);
+  border-radius: 10px;
 }
